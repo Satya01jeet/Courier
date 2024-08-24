@@ -1,5 +1,9 @@
 :root {
-    --black-color: hsl(var(--hue-color), 4%, 4%);
+    --primary-color: rgb(255, 0, 0);
+    --secondary-color: rgb(255, 108, 108);
+    --accent-color: #ffc342;
+    --text-color: #EEEDEB;
+    --background-color: rgb(255, 0, 0);
 }
 
 * {
@@ -9,9 +13,11 @@
 }
 
 body {
-    background-color: rgb(255, 0, 0);
-    color: #EEEDEB;
-    font-family: poppins;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 nav {
@@ -20,7 +26,6 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    /* background: var(--black-color); */
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -140,7 +145,7 @@ header {
     display: inline-block;
     white-space: nowrap;
     padding-left: 100%;
-    animation: scroll 10s linear infinite;
+    animation: scroll 20s linear infinite;
 }
 
 @keyframes scroll {
@@ -394,30 +399,59 @@ body {
     padding: 0;
 }
 
-
-
 @media only screen and (max-width: 480px) {
+    /* Ensure images do not overlap and are responsive */
+    img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px; /* Space between images */
+    }
+
+    /* Stack content vertically in Sections 2 and 3 */
+    .two .content, .three .content {
+        flex-direction: column;
+        padding: 15px;
+        align-items: center;
+    }
+
+    /* Ensure section cards stack and are full-width */
+    .card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* Handle specific image containers */
+    .two .content img, .three .content img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Additional padding around content */
+    .content p {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Ensure no element overlaps */
+    .two .content, .three .content {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+
+/* For tablets (480px to 1080px) */
+@media only screen and (max-width: 1080px) {
     nav {
         padding: 10px;
-        margin-bottom: 0;
-        /* background-color: #000; */
     }
 
     nav ul {
-        /* flex-wrap: wrap; */
         display: none;
-    }
-
-    nav ul li {
-        margin: 0 10px;
     }
 
     .buttons {
         display: none;
-    }
-
-    .logo img {
-        width: 200px;
     }
 
     .dropdown-content {
@@ -425,17 +459,12 @@ body {
         width: 100%;
     }
 
-    .banner-content-1 p {
-        font-size: 16px;
-    }
-
     .background-box .overlay .content h1 {
-        font-size: 1.5rem;
-        margin: 0 10px;
+        font-size: 2rem;
     }
 
     .input-box {
-        max-width: 100%;
+        max-width: 80%;
         margin-left: 0;
     }
 
@@ -443,143 +472,34 @@ body {
         width: 100%;
     }
 
-    .two {
-        height: 80vh;
-    }
-
-    .two .content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .three {
-        height: 80vh;
-    }
-
+    .two .content,
     .three .content {
         flex-direction: column;
         text-align: center;
     }
 
-    .three .content .left {
-        margin-top: -10px;
-    }
-
-    .four {
-        height: 80vh;
-    }
-
-    .four .container-4 {
-        text-align: center;
-        /* margin-top: vh; */
-    }
-
-    .lists {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-
-    .list ul {
-        padding: 0;
-    }
-
     .card {
         width: 45%;
-        margin: 10px 5%;
-    }
-
-    .footer {
-        padding: 1rem 5%;
-    }
-
-    .lists {
-        gap: 50px;
-        margin-bottom: 10px;
+        margin: 10px 2.5%;
     }
 
     .footer-text {
         text-align: center;
-        align-items: center;
-        padding: 10px;
-        width: 100%;
     }
 }
 
-/* For tablets (600px to 768px) */
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+/* For desktops (above 1080px) */
+@media only screen and (min-width: 1080px) {
     nav {
-        flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-between;
     }
 
     nav ul {
-        flex-direction: row;
-        justify-content: center;
-        display: none;
-    }
-
-    .buttons {
-        display: none;
-    }
-
-    .logo img {
-        width: 180px;
-    }
-
-    .dropdown-content {
-        right: 0;
-        width: 80%;
-    }
-
-    .background-box .overlay .content h1 {
-        font-size: 2rem;
-    }
-
-    .two .content {
-        flex-direction: row;
-    }
-
-    .three .content {
-        flex-direction: row;
-    }
-
-    .card {
-        width: 45%;
-        margin: 10px 5%;
-    }
-
-    .lists {
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 50px;
-    }
-
-    .footer-text {
-        width: 100%;
-        text-align: center;
-    }
-}
-
-/* For desktops (above 768px) */
-@media only screen and (min-width: 768px) {
-    nav {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    nav ul {
-        flex-direction: row;
-        justify-content: center;
+        display: flex;
     }
 
     .dropbtn {
         display: none;
-    }
-
-    .logo img {
-        width: 250px;
     }
 
     .background-box .overlay .content h1 {
@@ -587,29 +507,25 @@ body {
     }
 
     .input-box {
-        max-width: 70%;
+        max-width: 60%;
     }
 
     .track-button {
         width: auto;
     }
 
-    .two .content {
-        flex-direction: row;
-    }
-
+    .two .content,
     .three .content {
         flex-direction: row;
+        text-align: left;
     }
 
-    .lists {
-        flex-direction: row;
-        justify-content: space-between;
+    .card {
+        width: 30%;
+        margin: 10px 1.5%;
     }
 
     .footer-text {
         text-align: center;
-        padding: 10px;
-        width: 100%;
     }
 }
