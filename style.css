@@ -292,7 +292,7 @@ header {
 /* section-3 */
 
 .three {
-    height: 70vh;
+    height: 45vh;
     /* background-color: rgb(223, 18, 18); */
     background-color: rgb(222, 222, 222);
     /* background-color: #ffc342; */
@@ -495,7 +495,7 @@ body {
     }
 
     .two {
-        height: 90vh;
+        height: 75vh;
     }
 
     .two .content {
@@ -513,7 +513,7 @@ body {
     }
 
     .three {
-        height: 75vh;
+        height: 40vh;
         /* margin-top: 10px; */
     }
 
@@ -532,8 +532,13 @@ body {
         margin-left: -25px;
     }
 
+    .eight{
+        display: none;
+    }
+
     .four {
-        height: 85vh;
+        height: 125vh;
+        margin-top: 15vh;
     }
 
     .four .container-4 {
@@ -554,6 +559,19 @@ body {
     .card {
         width: 45%;
         margin: 20px 5%;
+    }
+
+    .fifth .background-box{
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        background-image: url('images/courier4.png');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .footer {
@@ -610,6 +628,10 @@ body {
 
     .three .content {
         flex-direction: row;
+    }
+    
+    .eight{
+        display: none;
     }
 
     .card {
@@ -672,6 +694,10 @@ body {
     .lists {
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .seven{
+        display: none;
     }
 
     .footer-text {
