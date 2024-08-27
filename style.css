@@ -1,3 +1,4 @@
+
 :root {
     --black-color: hsl(var(--hue-color), 4%, 4%);
     
@@ -185,7 +186,7 @@ header {
     position: relative;
     width: inherit;
     height: inherit;
-    background-image: url('images/posterrr.png');
+    background-image: url('images/top-image2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -200,7 +201,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
     z-index: 1;
 }
 
@@ -319,8 +320,8 @@ header {
 .four {
     background-color: rgb(222, 222, 222);
     /* background-color: #909090; */
-    height:60vh;
-    /* margin-top: -100px; */
+    height: 60vh;
+    margin-top: -100px;
 }
 
 .container-4 {
@@ -358,7 +359,7 @@ header {
     position: relative;
     width: 100%;
     height: 80vh;
-    background-image: url('images/courier2.png');
+    background-image: url('images/courier3.png');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -451,7 +452,7 @@ body {
     }
 
     .one{
-        height: 90vh;
+        height: 100vh;
         
     }
 
@@ -459,7 +460,7 @@ body {
         position: relative;
         width: inherit;
         height: inherit;
-        background-image: url('images/poster-mobile.png');
+        background-image: url('images/top-mobile.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -509,11 +510,6 @@ body {
 
     .two .content .left{
         font-size: 1.25rem;
-        margin-bottom: 20px;
-    }
-
-    .content .right img {
-        margin-top: 0px;
     }
 
     .three {
@@ -558,10 +554,6 @@ body {
     .card {
         width: 45%;
         margin: 20px 5%;
-    }
-
-    .fifth{
-        margin-top: 70px;
     }
 
     .footer {
