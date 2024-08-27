@@ -319,8 +319,8 @@ header {
 .four {
     background-color: rgb(222, 222, 222);
     /* background-color: #909090; */
-    height: 60vh;
-    margin-top: -100px;
+    height:60vh;
+    /* margin-top: -100px; */
 }
 
 .container-4 {
@@ -495,6 +495,7 @@ body {
 
     .two {
         height: 90vh;
+        padding-top: -100px;
     }
 
     .two .content {
@@ -509,6 +510,11 @@ body {
 
     .two .content .left{
         font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+
+    .content .right img {
+        margin-top: 0px;
     }
 
     .three {
@@ -553,6 +559,10 @@ body {
     .card {
         width: 45%;
         margin: 20px 5%;
+    }
+
+    .fifth{
+        margin-top: 70px;
     }
 
     .footer {
