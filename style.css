@@ -184,7 +184,7 @@ header {
     position: relative;
     width: inherit;
     height: inherit;
-    background-image: url('images/hero-desktop.png');
+    background-image: url('images/poster.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -221,7 +221,7 @@ header {
     display: flex;
     align-items: center;
     padding: 20px;
-    margin-top: 130px;
+    /* margin-top: 130px; */
     border-radius: 25px;
     /* Rounded container */
     text-align: center;
@@ -459,7 +459,7 @@ body {
         position: relative;
         width: inherit;
         height: inherit;
-        background-image: url('images/hero-mobile1.png');
+        background-image: url('images/1.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
