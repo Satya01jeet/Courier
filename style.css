@@ -324,10 +324,16 @@ header {
     margin-top: -100px;
 }
 
-.container-4 {
+.container-4{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    /* margin-top: 50px; */
+}
+.cardBox1, .cardBox2 {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
     /* margin-top: 50px; */
 }
 
