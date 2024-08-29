@@ -7,21 +7,21 @@ document.addEventListener('DOMContentLoaded', function () {
         interval: 200
     });
 
-    ScrollReveal().reveal('.container', {
+    ScrollReveal().reveal('.products', {
         duration: 1000,
         origin: 'left',
         distance: '50px',
         opacity: 0
     });
 
-    ScrollReveal().reveal('.content', {
+    ScrollReveal().reveal('.textCard', {
         duration: 2000,
         origin: 'left',
         distance: '50px',
         opacity: 0
     });
 
-    ScrollReveal().reveal('.left', {
+    ScrollReveal().reveal('.imgCard', {
         duration: 1500,
         origin: 'bottom',
         distance: '50px',
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         interval: 200
     });
 
-    ScrollReveal().reveal('.container-4', {
+    ScrollReveal().reveal('.card', {
         duration: 1500,
         origin: 'bottom',
         distance: '50px',
