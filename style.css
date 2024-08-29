@@ -581,11 +581,14 @@ body {
         padding: 0;
     }
 
-    .web_only{
+    .products .web_only{
+        display: none;
+    }
+    .four .web_only{
         display: none;
     }
 
-    .mobile_only{
+    .products .mobile_only{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -607,10 +610,10 @@ body {
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
     }
     .textCard{
-        margin-top: 20px;
+        margin-top: 30px;
         padding: 0 10px;
         text-align: center;
-        font-size: 20px;
+        font-size: 28px;
         font-weight: 600;
         color: #262626;
     }
@@ -620,6 +623,11 @@ body {
         margin-top: 50px;
     }
     
+    .four .mobile_only{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
     .cardBox2{
         display: flex;
         justify-content: center;
@@ -631,6 +639,9 @@ body {
         box-shadow: 0 2px 8px black;
     }
 
+    .fifth{
+        margin-top: 50px;
+    }
     .fifth .background-box{
         position: relative;
         width: 100%;
