@@ -486,7 +486,8 @@ body {
         position: relative;
         width: inherit;
         height: inherit;
-        background-image: url('images/top-6.png');
+        margin-top: -11vh;
+        background-image: url('images/mobile3.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
